@@ -1,0 +1,503 @@
+
+ <!DOCTYPE HTML>
+<html >
+<head>
+  <meta charset="UTF-8">
+  
+    <title>分析人类感知运动的影响因素——人与机器人近距离协作计划 | passer-by</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Yun">
+    
+    <meta name="description" content="近年来大量研究支持进一步创建机器人与人类的协作。">
+    
+    
+    <meta name="description" content="近年来大量研究支持进一步创建机器人与人类的协作。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="分析人类感知运动的影响因素——人与机器人近距离协作计划">
+<meta property="og:url" content="http://10tor.com/2016/03/14/Analyzing the Effects of Human Aware Motion Planning on Close Proximity Human Robot Collaboration/">
+<meta property="og:site_name" content="passer-by">
+<meta property="og:description" content="近年来大量研究支持进一步创建机器人与人类的协作。">
+<meta property="og:image" content="http://d.pcs.baidu.com/thumbnail/aa407cc24ba7bf38bb822f4bea786b1a?fid=2419344114-250528-841063492031576&time=1458716400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-0%2BtM5O5idOjoJ974z9M4GdfvFkc%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=1916307270108158313&dp-callid=0&size=c710_u500&quality=100">
+<meta property="og:image" content="http://d.pcs.baidu.com/thumbnail/b1c18f22e003f07e3b35a04f5a20144f?fid=2419344114-250528-1049741134422873&time=1458716400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-hZHz3aIfvtVsDoaBhPxpHaPpxFg%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=1916309784580280974&dp-callid=0&size=c710_u500&quality=100">
+<meta property="og:image" content="http://d.pcs.baidu.com/thumbnail/2fa58d7c4f8b01c20bd3b336afea8257?fid=2419344114-250528-174926416891757&time=1458716400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-7xmm8LKm0Fz6Qg1Juxxgyc7l4LQ%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=1916310197090028782&dp-callid=0&size=c710_u500&quality=100">
+<meta property="og:image" content="http://d.pcs.baidu.com/thumbnail/9649b84247dbc202823a0acb41d095f2?fid=2419344114-250528-982002530225370&time=1458716400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-XILr5G2%2FRMQVrsbhW9J8GyVUgP8%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=1916310551255166224&dp-callid=0&size=c710_u500&quality=100">
+<meta property="og:image" content="http://d.pcs.baidu.com/thumbnail/c17b83aad63ce4e74d3123b6c9c5301e?fid=2419344114-250528-234636654238292&time=1458716400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-ZLsk5nRF5gg5tuTk%2BJyrFJFmwt4%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=1916310728579333176&dp-callid=0&size=c710_u500&quality=100">
+<meta property="og:image" content="http://d.pcs.baidu.com/thumbnail/c08849bc303e2db97cbc7d386d7229dd?fid=2419344114-250528-621920521228114&time=1458716400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-9ZKBldzXWAP5uXuZvNcyUZt616U%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=1916311456412476048&dp-callid=0&size=c710_u500&quality=100">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="分析人类感知运动的影响因素——人与机器人近距离协作计划">
+<meta name="twitter:description" content="近年来大量研究支持进一步创建机器人与人类的协作。">
+
+
+    
+    <link rel="alternative" href="/atom.xml" title="passer-by" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.png">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.png">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.png">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="passer-by" title="passer-by"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="passer-by">passer-by</a></h1>
+				<h2 class="blog-motto">喧嚣终归是敌人 漫漫长路何必矢志不渝</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="hidden" name="q" value="site:10tor.com">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2016/03/14/Analyzing the Effects of Human Aware Motion Planning on Close Proximity Human Robot Collaboration/" title="分析人类感知运动的影响因素——人与机器人近距离协作计划" itemprop="url">分析人类感知运动的影响因素——人与机器人近距离协作计划</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="http://10tor.com/about" title="Yun" target="_blank" itemprop="author">Yun</a>
+		
+  <p class="article-time">
+    <time datetime="2016-03-14T08:00:00.000Z" itemprop="datePublished"> Published 2016-03-14</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Analysis"><span class="toc-number">1.</span> <span class="toc-text">Analysis</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Background"><span class="toc-number">1.1.</span> <span class="toc-text">Background</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Objective"><span class="toc-number">1.2.</span> <span class="toc-text">Objective</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.3.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Apparatus"><span class="toc-number">1.3.1.</span> <span class="toc-text">Apparatus</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Task"><span class="toc-number">1.3.2.</span> <span class="toc-text">Task</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Participants"><span class="toc-number">1.3.3.</span> <span class="toc-text">Participants</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Procedure"><span class="toc-number">1.3.4.</span> <span class="toc-text">Procedure</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Hypotheses"><span class="toc-number">1.3.5.</span> <span class="toc-text">Hypotheses</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Results"><span class="toc-number">1.4.</span> <span class="toc-text">Results</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Conclusion"><span class="toc-number">1.5.</span> <span class="toc-text">Conclusion</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Application"><span class="toc-number">1.6.</span> <span class="toc-text">Application</span></a></li></ol></li></ol>
+		
+		</div>
+		
+		<p>近年来大量研究支持进一步创建机器人与人类的协作。</p>
+<a id="more"></a>
+<h2 id="Analysis">Analysis</h2>
+<h3 id="Background">Background</h3>
+<p>当前，许多领域中的常规机器人的运作活动与人类完全隔离</p>
+<ul>
+<li>缺乏人机一体化</li>
+<li>当前机器人不具备复杂的判断能力和灵活的决策能力</li>
+<li>大部分的工业任务还是需要人类亲历亲为</li>
+</ul>
+<p>人类的反馈评价对于自适应式机器人助手是有限的，尤其在行为水平（motion-level）适应领域，缺乏human-in-the-loop的真实评价使得无法确定这种适应能带来有效和令人满意的人机交互。近年来大量研究支持进一步创建的机器人与人类协作</p>
+<h3 id="Objective">Objective</h3>
+<p>研究人类对于motion-level机器人的适应性，以确保：</p>
+<ul>
+<li>对团队流畅的影响作用</li>
+<li>人类满意度</li>
+<li>安全感和舒适感</li>
+</ul>
+<h3 id="Methods">Methods</h3>
+<p>被试与机器人在共享的工作空间内进行协作任务。机器人的行为计划模式有两种：常规型（standard），人类感知型（human aware）。机器人行为编制采用CBiRRT算法。</p>
+<p>常规型机器人（基线）运动采用最短路径。团队流畅通过一组量化指标评估，人类的满意度、安全感和舒适度通过调查问卷进行评估。</p>
+<h4 id="Apparatus">Apparatus</h4>
+<ul>
+<li>ABB IRB-120：六个标准自由度的工业机器人</li>
+<li>PhaseSpace运动捕捉系统：工作区追踪人类并探测动作和表现</li>
+<li>实时安全系统：根据人与机器人间距离调节机器人运动速度<br><img src="http://d.pcs.baidu.com/thumbnail/aa407cc24ba7bf38bb822f4bea786b1a?fid=2419344114-250528-841063492031576&amp;time=1458716400&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-0%2BtM5O5idOjoJ974z9M4GdfvFkc%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1916307270108158313&amp;dp-callid=0&amp;size=c710_u500&amp;quality=100" alt=""></li>
+</ul>
+<h4 id="Task">Task</h4>
+<p>人类被试将8个螺丝放置在指定位置，机器人用刷子蘸取集中放置的容器中的密封胶并刷在螺丝上。要求每个被试在操作下一个螺丝前，要拧当前螺丝一整圈。</p>
+<p>从第一个螺丝胶到最后一个，平均要花上52s。有两种颜色的螺丝：黄色或红色。被试先放置4个红色的，然后等待声音线索，再进行黄色螺丝的处理。</p>
+<p>螺丝以被试预定的顺序排列: 1, 3, 8, 6, 2, 4, 7, 5。</p>
+<p><img src="http://d.pcs.baidu.com/thumbnail/b1c18f22e003f07e3b35a04f5a20144f?fid=2419344114-250528-1049741134422873&amp;time=1458716400&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-hZHz3aIfvtVsDoaBhPxpHaPpxFg%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1916309784580280974&amp;dp-callid=0&amp;size=c710_u500&amp;quality=100" alt=""></p>
+<p><a href="http://youtu.be/Dk5XVQBDJpU" target="_blank" rel="external">任务视频</a></p>
+<h4 id="Participants">Participants</h4>
+<p>20名麻省理工学院附属机构的本科生、研究生、博士后、交流生。其中7名女性，13名男性，年龄19-39岁（<em>M</em> = 27.1, <em>SD</em> = 6.24）。</p>
+<h4 id="Procedure">Procedure</h4>
+<p>采用<strong>重复测量设计</strong>。随机取样分配两个被试组，11人与human-aware机器人合作，<br>9人与standard机器人合作。被试完成实验前都未知自己的分组属性。</p>
+<p>两组被试分别进行培训。被试在没有助手提供密封胶的情况下放置螺丝，以熟悉任务。<br>然后在人类助手的协助下执行任务，以模拟之后机器人的类似行为。</p>
+<p>采用<strong>双盲范式</strong>，排除主试无意识的心理倾斜。</p>
+<p>与人类合作执行任务后，被试与机器人助手执行相同的任务。每个被试进行两次任务训练：</p>
+<ul>
+<li>练习与机器人助手合作</li>
+<li>建立机器人的心理模型</li>
+</ul>
+<p>之后，被试填写第一份问卷（1-4）。</p>
+<p><img src="http://d.pcs.baidu.com/thumbnail/2fa58d7c4f8b01c20bd3b336afea8257?fid=2419344114-250528-174926416891757&amp;time=1458716400&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-7xmm8LKm0Fz6Qg1Juxxgyc7l4LQ%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1916310197090028782&amp;dp-callid=0&amp;size=c710_u500&amp;quality=100" alt=""></p>
+<p>下一阶段的实验，机器人的模式与被试之前的相反。实验前，被试仅被告知机器人将在这一阶段行动有所不同，几个行为参数发生改变，以免暴露机器人模式。</p>
+<p>之后，被试接受第二份问卷填写（5-8）。</p>
+<p>实验总流程：<br><img src="http://d.pcs.baidu.com/thumbnail/9649b84247dbc202823a0acb41d095f2?fid=2419344114-250528-982002530225370&amp;time=1458716400&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-XILr5G2%2FRMQVrsbhW9J8GyVUgP8%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1916310551255166224&amp;dp-callid=0&amp;size=c710_u500&amp;quality=100" alt=""></p>
+<h4 id="Hypotheses">Hypotheses</h4>
+<ul>
+<li>使用human-aware运动方案的human–robot更加流畅，表现在相比于standard运动方案更短的任务耗时、更多同步动作、人与机器人更少的空转时间和更大的分离距离。</li>
+<li>被试对于human-aware机器人作为合作者的表现更加满意，舒适和安全。</li>
+</ul>
+<h3 id="Results">Results</h3>
+<p>当与能够自适应的机器人合作，被试完成任务的速度增加5.57%,人类同步动作增加19.9%，减少2.96%空转时间。机器人空转时间减少17.3%，增加15.1%分离距离。<br>问卷结果显示，与自适应机器人合作，被试更安全、更舒适，比standard机器人更有种“队友”的感觉。</p>
+<p><img src="http://d.pcs.baidu.com/thumbnail/c17b83aad63ce4e74d3123b6c9c5301e?fid=2419344114-250528-234636654238292&amp;time=1458716400&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-ZLsk5nRF5gg5tuTk%2BJyrFJFmwt4%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1916310728579333176&amp;dp-callid=0&amp;size=c710_u500&amp;quality=100" alt=""><br>(a)任务执行时间        (b)同步动作百分比    (c) 人类和机器人间平均分离距离    (d)机器人空转时间    (e)人类空转时间</p>
+<p><img src="http://d.pcs.baidu.com/thumbnail/c08849bc303e2db97cbc7d386d7229dd?fid=2419344114-250528-621920521228114&amp;time=1458716400&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-9ZKBldzXWAP5uXuZvNcyUZt616U%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=1916311456412476048&amp;dp-callid=0&amp;size=c710_u500&amp;quality=100" alt=""><br>(a)同步动作百分比    (b)机器人空转时间    (c)人类和机器人间平均分离距离</p>
+<h3 id="Conclusion">Conclusion</h3>
+<p>人们对于motion-level的机器人有良好适应，human–robot合作团队流畅性和人类成员满意度显著。</p>
+<h3 id="Application">Application</h3>
+<p>研究结论支持human-aware运动技术与human–robot近距离合作技术的发展。</p>
+<p><em>源文章: <a href="http://pan.baidu.com/s/1kTRLAr9" target="_blank" rel="external">《Analyzing the Effects of Human-Aware Motion Planning on Close-Proximity Human–Robot Collaboration》</a>.Lasota,P.A.,&amp; Shah,J.A.(2015).Human Factors the Journal of the Human Factors &amp; Ergonomics Society,57(1),21-33.</em></p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/Psychology/">Psychology</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/human-factors/">human factors</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://10tor.com/2016/03/14/Analyzing the Effects of Human Aware Motion Planning on Close Proximity Human Robot Collaboration/" data-title="分析人类感知运动的影响因素——人与机器人近距离协作计划 | passer-by" data-tsina="null" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2016/03/18/如何设计更通俗易懂的交通标志/" title="如何设计更通俗易懂的交通标志">
+  <strong>上一篇：</strong><br/>
+  <span>
+  如何设计更通俗易懂的交通标志</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2016/03/13/Perfect Timing Urgency, Not Driving Situations, Influence the Best Timing to Activate Warnings/"  title="最佳时刻：紧迫感，而非驾驶状态，影响警告激活">
+ <strong>下一篇：</strong><br/> 
+ <span>最佳时刻：紧迫感，而非驾驶状态，影响警告激活
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+
+<!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2016334"></script>
+<!-- UY END -->
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Analysis"><span class="toc-number">1.</span> <span class="toc-text">Analysis</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Background"><span class="toc-number">1.1.</span> <span class="toc-text">Background</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Objective"><span class="toc-number">1.2.</span> <span class="toc-text">Objective</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.3.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Apparatus"><span class="toc-number">1.3.1.</span> <span class="toc-text">Apparatus</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Task"><span class="toc-number">1.3.2.</span> <span class="toc-text">Task</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Participants"><span class="toc-number">1.3.3.</span> <span class="toc-text">Participants</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Procedure"><span class="toc-number">1.3.4.</span> <span class="toc-text">Procedure</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Hypotheses"><span class="toc-number">1.3.5.</span> <span class="toc-text">Hypotheses</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Results"><span class="toc-number">1.4.</span> <span class="toc-text">Results</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Conclusion"><span class="toc-number">1.5.</span> <span class="toc-text">Conclusion</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Application"><span class="toc-number">1.6.</span> <span class="toc-text">Application</span></a></li></ol></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">Categories</p>
+		<ul>
+		
+			<li><a href="/categories/Diary/" title="Diary">Diary<sup>5</sup></a></li>
+		
+			<li><a href="/categories/Psychology/" title="Psychology">Psychology<sup>3</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">Tags</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/feelings/" title="feelings">feelings<sup>4</sup></a></li>
+		
+			<li><a href="/tags/human-factors/" title="human factors">human factors<sup>3</sup></a></li>
+		
+			<li><a href="/tags/LOL/" title="LOL">LOL<sup>1</sup></a></li>
+		
+			<li><a href="/tags/birth/" title="birth">birth<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> I&#39;m Yun. <br/>
+			Because of his love to accompany, she&#39;s revived.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<a href="mailto:10tor@outlook.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+		<p class="copyright">Record ideas and Live an AWSOME life © 2016 
+		
+		<a href="http://10tor.com/about" target="_blank" title="Yun">Yun</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#nothing"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F3325113b8697ad58d88a5c029b088d87' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+  <div id="totop">
+  <a title="ToTop"><img src="/img/scrollup.png"/></a>
+  </div>
+  <script src="/js/totop.js"></script>
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<div style=”display:none;”>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?3325113b8697ad58d88a5c029b088d87";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</div>
+<script src="/js/popular.js"></script>
+
+  </body>
+</html>
