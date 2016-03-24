@@ -4,7 +4,7 @@
   <subtitle><![CDATA[喧嚣终归是敌人 漫漫长路何必矢志不渝]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://10tor.com/"/>
-  <updated>2016-03-24T03:07:20.883Z</updated>
+  <updated>2016-03-24T08:14:00.468Z</updated>
   <id>http://10tor.com/</id>
   
   <author>
@@ -13,6 +13,72 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Positive Display Polarity Is Particularly Advantageous for Small Character Sizes –Implications for Display Design]]></title>
+    <link href="http://10tor.com/2016/03/21/Positive%20Display%20Polarity%20Is%20Particularly%20Advantageous%20for%20Small%20Character%20Sizes%20%E2%80%93Implications%20for%20Display%20Design/"/>
+    <id>http://10tor.com/2016/03/21/Positive Display Polarity Is Particularly Advantageous for Small Character Sizes –Implications for Display Design/</id>
+    <published>2016-03-21T03:11:00.000Z</published>
+    <updated>2016-03-24T03:30:41.000Z</updated>
+    <content type="html"><![CDATA[<p>正极显示对于小尺寸字符的显示更有利。</p>
+<a id="more"></a>
+<h2 id="Analysis">Analysis</h2>
+<h3 id="Background">Background</h3>
+<p>前人研究表明，明亮背景下的暗色字符相比于暗色背景下的明亮字符有更好的清晰度，这可能是较高显示亮度提供正极性影响。</p>
+<p><strong>正极性优势</strong></p>
+<ul>
+<li>低错误率 &amp; 更快的字母识别 (Bauer &amp; Cavonius,  1980)</li>
+<li>更快的字母转录显示 ( Radl，1980 )</li>
+<li>快速阅读 (Chan &amp;  Lee, 2005)</li>
+<li>增加视力 (Piepenbrock  et al.,  in  press)</li>
+<li>视觉更舒适 (Taptagaporn &amp; Saito, 1990, 1993)</li>
+</ul>
+<p><strong>正极性与负极性无明显差异</strong></p>
+<ul>
+<li>在阅读速度和理解方面两者无差异（Cushman，1986）</li>
+<li>校阅速率和精度无差异 (Creed, Dennis, &amp; Newstead, 1988; Gould  et al.,  1987)</li>
+<li>阅读时间，搜索时间，主观感知时间（例如视敏度、视觉品质等）无明显差异 (Pastoor, 1990)<br><em>然而导致这种现象的原因可能是统计效度低，以及使用了具有闪烁倾向的阴极射线管（CRT）显示器。</em></li>
+</ul>
+<h3 id="Objective">Objective</h3>
+<p>检验正极优势的显示亮度的假设，进一步理解显示极性和字符尺寸的联合效应，即对于展示设计的校对任务评估。</p>
+<h3 id="Methods">Methods</h3>
+<p>每个字符尺寸的第一篇文章数据不用于分析<br>无关刺激污染数据<br>2×4×9混合设计<br>2：显示极性正or负<br>4：字符大小8、10、12、14pt<br>9：文章数<br>因变量<br>查错数<br>阅读速率</p>
+<h4 id="Apparatus">Apparatus</h4>
+<p>暗室——除了实验刺激呈现和三盏朝墙的台灯<br>显示器关闭——被试眼睛位置环境照度&lt;0.1 lx<br>校对任务文本呈现于24英寸（1920×1200 pixels ，94.34 ppi）薄膜晶体管（TFT）的苹果iMac电脑显示器<br>为最大限度提高对比度，屏幕亮度<br>白色：342 cd/m2(RGB值 [255,  255,  255])<br>黑色：1 cd/m2(RGB值 [0,  0,  0])<br>文本背景Michelson对比度<br>白色： c = (Lt - Lb)/(Lt + Lb) = - 1<br>黑色： c =  1<br>实验中，被试眼睛位置环境照度<br>白色： 116lx<br>黑色： 4lx<br>下巴拖——保持视距50cm</p>
+<h4 id="Task">Task</h4>
+<p>校阅任务——40篇（约250字/篇）<br>4种不同的单位尺寸呈现8，10， 12， 14pt（绝对单位长度）；对应0.22°，0.25°，0.31°和0.34°的垂直视角<br>每随机的10篇为一种呈现尺寸<br>每篇文章包含14个5种类型的错误<br>拼写错误<br>字母重复<br>字母缺漏<br>字母成对颠倒<br>字母错误<br>语法错误<br>不正确的引申词或动词          让被试理解性阅读而非略读<br>纸质问卷调查：主观感受眩光、反射、文本清晰度<br>       评估专注于文本的能力<br><img src="http://7xs83v.com1.z0.glb.clouddn.com/321t1.png" alt=""></p>
+<h4 id="Participants">Participants</h4>
+<p>165名被试（119名女性）<br>5名被试数据剔除——阅读不符合实验要求<br>其余被试年龄18-44岁(M = 23.6, SE = 0.3)<br>随机分于正极性or负极性组，且人数相当<br>学分或被试费<br>母语为德语<br>视力或矫正视力正常</p>
+<h4 id="Procedure">Procedure</h4>
+<p>练习实验        40篇文章中的一个随机句子<br>重复训练直到理解实验<br>默读<br>找出尽可能多的错误       大声读出<br>计算机的内置麦克风录制<br>50s/篇<br>不可能完全读完<br>50s后       复述最后读到的2个单词<br>问卷填写<br>实验过程中，主试坐在被试后面，实验室里<br>实验共持续45min</p>
+<h3 id="Results">Results</h3>
+<h4 id="Proofreading_performance">Proofreading performance</h4>
+<p>全字符尺寸下，正极性条件下校对绩效显著高于负极性<br>MANOVA<br>极性： F(1, 158) = 9.34, p = .003, η2 = .056<br>字符尺寸： F(3, 156) = 83.66, p &lt; .001, η2 = .62<br>交互作用： F(3, 156) = 3.16, p = .026, η2 = .057<br>正极性优势随字符尺寸的减小而线性增加<br>F(1, 158) = 8.92, p = .003, η2 =  .053<br>但二次方、三次方影响不显著<br>Fs &lt; 1<br>实验疲劳效应和剩余交互作用均不显著<br>Fs &lt; 1.43, p &gt; .17, η2 &lt; .19</p>
+<h4 id="Reading_rate">Reading rate</h4>
+<p>全字符尺寸下，正极性条件下阅读速率显著高于负极性<br>MANOVA<br>极性： F(1, 158) = 2.60, p = .055 , η2 = .016<br>字符尺寸： F(3, 156) = 15.86, p &lt; .001, η2 =  .23<br>交互作用： F(3, 156) = 4.70, p = .004, η2 = .083<br>正极性优势随字符尺寸的减小而线性增加<br>F(1, 158) = 10.61, p = .001, η2 = .063<br>但二次方、三次方影响不显著<br>Fs &lt; 1<br>实验疲劳效应显著<br>F(8, 151) = 2.98, p = .004, η2 = .14<br>剩余交互作用不显著<br>Fs &lt; 1.31, p &gt; .24, η2 &lt; .17</p>
+<h4 id="Questionnaire_data">Questionnaire data</h4>
+<p>字符呈现的极性对于文章的易读性没有影响<br>是否容易专注于文本等<br>负极性呈现中阅读换行更模糊<br>正极性呈现中有更大的眩光<br><img src="http://7xs83v.com1.z0.glb.clouddn.com/321t2.png" alt=""></p>
+<h3 id="Conclusion">Conclusion</h3>
+<p>调查结果符合假设</p>
+<p>通常较高亮度的正极性显会增加对于细节的感知力</p>
+<h3 id="Discussion">Discussion</h3>
+<p>实验结果符合前人研究<br>Bauer &amp; Cavonius, 1980; Buchner &amp; Baumgartner, 2007; Chan &amp; Lee, 2005; Mayr &amp; Buchner, 2010; Piepenbrock et al., in press; Taptagaporn &amp; Saito, 1990, 1993<br>大字符提高文本易读性<br>显示器亮度假说<br>整体显示高亮度       瞳孔强烈收缩<br>             减少球面像差      增加视野深度      促进细节感知<br>辐射假说？<br>衍射效应？<br>亮底暗字的视觉习惯？</p>
+<p>本实验中，正负极性下文本可读性的主观评价无明显差异<br>用户对于工效学层面的呈现方式不敏感<br>设计人员对于极性优势的利用<br>低生态效度<br>实验条件下环境照明低<br>悬而未决<br>自然光<br>强烈日照<br>变动的光照</p>
+<h3 id="Application">Application</h3>
+<p>这项发现对于显示文本的设计很重要<br>计算机、汽车控制和娱乐系统，或智能手机等<br>越来越多地使用基于文本的媒体和通信的消费<br>这些显示器的大小是有限的<br>通常使用小字体以传达更多的信息<br>在小字体使用中，特别应避免负极性显示<br>不适用<br>夜车上的显示器<br>亮底色降低司机视觉暗适应<br>可能的解决方案：红色背景颜色<br>人类的视网膜视锥细胞主要对典型TFT-LCD发出的红光不敏感</p>
+<p><em>源文章: <a href="http://pan.baidu.com/s/1pKa1iRp" target="_blank" rel="external">《Positive Display Polarity Is Particularly Advantageous for Small Character Sizes –Implications for Display Design》</a>.Piepenbrock,C.,Mayr,S.,&amp; Buchner, A.(2014).Human Factors the Journal of the Human Factors &amp; Ergonomics Society, 56(5), 942-51.</em></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>正极显示对于小尺寸字符的显示更有利。</p>
+]]>
+    
+    </summary>
+    
+      <category term="human factors" scheme="http://10tor.com/tags/human-factors/"/>
+    
+      <category term="Psychology" scheme="http://10tor.com/categories/Psychology/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[如何设计更通俗易懂的交通标志]]></title>
